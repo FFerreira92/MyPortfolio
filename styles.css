@@ -1,23 +1,31 @@
-body{
-    background-color: honeydew;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-    font-size: 30px;
-    color: plum;
+
+.s1{
+    background-image: url("./img/houses.jpg");
+    background-size: cover;
 }
-h2{
-    color: red;
-    font-size: 20px;
+
+.s2{
+    background-image: url("./img/egypt.jpg");
+    background-size: cover;
 }
-.big{
-    font-size: 60px;
+
+.s3{
+    background-image: url("./img/forest.jpg");
+    background-size: cover;
 }
-.uppercase{
-    text-transform: uppercase;
-}
-.big.uppercase{
-    color: navy;
-}
-h1 span{
-    color: violet;
+
+.section h1 {
+    font-size: 64px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: linear-gradient(to left, #FF6392, #F9F9F9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
