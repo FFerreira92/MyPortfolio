@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/pixel.png">
+    <script src="./app.js"></script>
     <title>Pherrific</title>
 </head>
 <body>            
@@ -15,36 +19,43 @@
     </header>
     
     <main>
-        <h2>Hey World! My name is Filipe Ferreira</h2>
-        <p>I'm a Developer in the making! Student @Cinel in Lisbon and trying my best to start a career in the field! Right now i'm enhacing my skills in C#, Javascript, HTML, CSS, SQL and others!
-            I'm an enthusiastic, higly motivated self driven person with big curiosity and a high capacity to solve problems.
-            Other than that i'm also a travel addicted, i do love Star-Wars, sports (football and formula1) and a fresh beer.
-        </p>
-        <img src="img/foto.jpg">
-        <p>Dolomites - Italy</p>
+
+        <section class="s1">
+            <h2>Hey World! My name is Filipe Ferreira</h2>
+            <p>I'm a Developer in the making! Student @Cinel in Lisbon and trying my best to start a career in the field! Right now i'm enhacing my skills in C#, Javascript, HTML, CSS, SQL and others!
+                I'm an enthusiastic, higly motivated self driven person with big curiosity and a high capacity to solve problems.
+                Other than that i'm also a travel addicted, i do love Star-Wars, sports (football and formula1) and a fresh beer.
+            </p>
+            <img src="img/foto.jpg">
+            <p class="caption">Dolomites - Italy</p>
+        </section>
 
         <section>
+
                 <h2>Projects so far...</h2>
+
             <!--Project number 1-->
                 <!-- Slideshow container -->
+
                 <div class="slideshow-container">
+
                     <h3>SmartBank</h3>
-                    <p>School project - Banking application using OOP</p>
+                    <p class="caption">School project - Banking application using OOP</p>
                 <!-- Full-width images with number and caption text -->
+
                 <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="img/smartbank1.jpg" style="width:100%">
-                <div class="text">Smartbank</div>
+                <img src="img/SmartBank.jpg" style="width:100%">
                 </div>
             
                 <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="img/smartbank2.jpg" style="width:100%">     
+                <img src="img/SmartBank2.jpg" style="width:100%">     
                 </div>
             
                 <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="img/smartbank3.jpg" style="width:100%">     
+                <img src="img/SmartBank3.jpg" style="width:100%">     
                 </div>
             
                 <!-- Next and previous buttons -->
@@ -59,7 +70,7 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
                 </div>   
-            
+                
                 <div>
                     <ul>
                         <li>OOP - Object Oriented Programming</li>
@@ -69,10 +80,11 @@
                 </div>
                 
             <!-- Project number 2-->
-
+            <h3>PitStop AutoShop</h3>
+            <p class="caption">School project - AutoShop management system</p>
             <div class="row">
                 <div class="column">
-                  <img src="img/pitstopautoshop.png" alt="Snow" style="width:100%">
+                  <img src="img/pitstopautoshop.jpg" alt="Snow" style="width:100%">
                 </div>
                 <div class="column">
                   <img src="img/pitstopautoshop2.jpg" alt="Forest" style="width:100%">
@@ -105,7 +117,7 @@
         <p>&copy; Copyright 2022 Filipe Ferreira</p>
     </footer>  
 
-    <script src="./app.js"></script>
+    
 </body>
 </html>
 
