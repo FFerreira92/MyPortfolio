@@ -1,4 +1,10 @@
 
+$(document).ready(function(){
+  $('.slider').slick({
+
+  })
+})
+
 const skillsSection = document.getElementById('skills-section');
 
 const progressBars = document.querySelectorAll('.progress-bar');

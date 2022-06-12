@@ -82,7 +82,7 @@ header nav .branding{
 }
 
 .about{
-  padding: 18rem 0;
+  padding: 12rem 0;
 }
 
 .about .social a img{
@@ -116,7 +116,8 @@ header nav .branding{
 }
 
 .skills{
-  background:var(--dark)
+  background:var(--dark);
+  clip-path: polygon(0 0, 80% 10%,100% 0,100% 100%,0 100%);
 }
 
 .skills .section-heading{
@@ -208,4 +209,9 @@ header nav .branding{
 .group-bar{
   margin-bottom: 30px;
   align-content: center;
+}
+
+.slider .slide img{
+  width: 500px;
+  height: 280px;
 }
