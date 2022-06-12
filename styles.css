@@ -6,6 +6,14 @@
   --dark: #232326;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
 body{
   margin:0;
   font-size: 16px;
@@ -329,4 +337,82 @@ footer{
   font-size: 16px;
   text-align: center;
   padding: 0.7rem;
+}
+
+@media (max-width: 1024px){
+  header #main-nav{
+    display: none;
+  }
+}
+
+.site-main-wrapper{
+  position: relative;
+}
+
+.site-main-wrapper .hamburger{
+  position: absolute;
+  top:40px;
+  right: 40px;
+  z-index: 11;
+}
+
+.site-main-wrapper .hamburger img{
+  width: 40px;
+  height: auto;
+}
+
+.site-main-wrapper .hamburger button{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobile-nav{
+  position:fixed;
+  top: 0;
+  left:0;
+  z-index: 1001;
+  background: var(--pure);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.open{
+  transform: translateX(0);
+}
+
+.times{
+  position: fixed;
+  top:30px;
+  right: 100px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.times img{
+  width: 30px;
+  height: auto;
+}
+
+.mobile-nav ul{
+  list-style-type: none;
+
+}
+
+.mobile-nav ul li a{
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.mobile-nav ul li{
+  margin-bottom: 2rem;
 }

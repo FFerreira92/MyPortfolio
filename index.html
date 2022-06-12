@@ -17,18 +17,36 @@
 </head>
 
 <body>
+<div class="site-main-wrapper">
+    <div class="hamburger">
+        <button class="hamburger-button">
+            <img src="img/cardapio.png" alt="">
+        </button>
+    </div>
+    <div class="mobile-nav">
+        <button class="times">
+            <img src="img/close.png" alt="">
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#home">Skills</a></li>
+            <li><a href="#home">Projects</a></li>
+        </ul>
+    </div>
+
     <!-- Inicio da secção inicial-->
-    <header>
+    <header id="home">
         <div class="container">
 
-            <nav class="flex items-center space-between">
+            <nav id="main-nav" class="flex items-center space-between">
                 <div class="left flex items-center">
                     <div class="branding"></div>
                     <div>
-                        <a href="#Home">Home</a>
-                        <a href="#About">About</a>
-                        <a href="#Skills">Skills</a>
-                        <a href="#Projects">Projects</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
                     </div>
                 </div>
                 <div class="right">
@@ -52,7 +70,7 @@
     <!-- fim da secção inicial-->
 
     <!-- Inicio da secção about-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container flex items-center">
             <div class="left flex-1">
                 <img src="img/teste.png" alt="">
@@ -82,7 +100,7 @@
 
     <!-- Inicio da secção skills-->
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
         <div class="container" id="skills-section">
             <h1 class="section-heading">My <span>Skills</span></h1>
@@ -161,7 +179,7 @@
 
 
     <!-- Inicio da secção Projects-->
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <h1>Projects</h1>
             <div class="slider">
@@ -240,6 +258,8 @@
 
 
     <!-- fim da secção footer-->
+
+</div>
 
     <script src="./app.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
