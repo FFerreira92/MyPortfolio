@@ -80,3 +80,37 @@ header nav .branding{
 .hero .right h1 span{
   color:var(--primary);
 }
+
+.about{
+  padding: 18rem 0;
+}
+
+.about .social a img{
+  height: 30px;
+  margin-top: 1rem;
+  margin-right: 10px;
+
+}
+
+.about .left img{
+  height: 500px;
+  border-radius: 1000px;
+  
+}
+
+.about .right h1{
+  font-size: 40px;  
+  margin-bottom: 10px;
+}
+.about .right h1 span{ 
+  color:var(--primary)
+}
+
+.about .right h3{
+  font-size: 20px;
+  line-height: 3;
+}
+
+.about .right p{
+  font-size: 16px;
+}
