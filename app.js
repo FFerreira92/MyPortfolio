@@ -1,29 +1,32 @@
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const skillsSection = document.getElementById('skills-section');
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+const progressBars = document.querySelectorAll('.progress-bar');
+
+function showProgress(){
+  progressBars.forEach(progressBar=>{
+    const value= progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = value+'%';  
+  });
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function hideProgress(){
+  progressBars.forEach(p=>{
+    p.style.opacity =1;
+    p.style.width = 0;
+  })
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+window.addEventListener('scroll',() =>{
+  const sectionPos = skillsSection.getBoundingClientRect();
+  const screenPos = window.innerHeight/2;
+
+  if(sectionPos.top < screenPos){          
+    showProgress();
+  }else{
+    hideProgress();   
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
+
+});
