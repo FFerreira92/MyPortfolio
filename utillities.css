@@ -1,0 +1,54 @@
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+}
+
+.btn-primary{
+    background: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--pure);
+
+}
+
+.btn-secondary{
+    background: transparent;
+    color:var(--primary);
+    border-color: var(--primary);
+    transition: all 0.3s ease;
+    margin-left: 18.1rem;
+}
+
+.btn-secondary:hover{
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.flex-1{
+    flex:1;
+}
+
+.justify-center{
+    justify-content: center;
+}
