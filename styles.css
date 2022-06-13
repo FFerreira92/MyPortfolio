@@ -339,11 +339,7 @@ footer{
   padding: 0.7rem;
 }
 
-@media (max-width: 1024px){
-  header #main-nav{
-    display: none;
-  }
-}
+
 
 .site-main-wrapper{
   position: relative;
@@ -354,6 +350,7 @@ footer{
   top:40px;
   right: 40px;
   z-index: 11;
+  display: none;
 }
 
 .site-main-wrapper .hamburger img{
@@ -415,4 +412,154 @@ footer{
 
 .mobile-nav ul li{
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px){
+  header #main-nav{
+    display: none;
+  }
+
+  .site-main-wrapper .hamburger{
+   display: block; 
+  }
+
+  .hero .left img{
+    width: 260px;
+  }
+  .hero .right h1 {
+    font-size: 2rem;
+  }
+
+  .btn-secondary {
+    margin-left: 7.5rem;
+  }
+
+  .hero {
+    padding-left: 3rem;
+    padding-right: 5rem;
+  }
+
+  .about .left img {
+    width: 350px;
+    height: auto;  
+    border-radius: 1700px;
+  }
+
+  .contact .container .left img {
+    width: 300px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 576px){
+  .hero{
+    flex-direction: column;
+    padding-right: 6.5rem;
+    padding-left: 3rem;
+  }
+
+  .hero .left{
+    margin-top: -5rem;
+  }
+
+  .hero .right{
+    margin-top: 5rem;
+    text-align: center;
+    
+    
+  }
+  .btn-secondary{
+    margin-left: 3.6rem;
+    margin-right: 3.5rem;
+  }
+  .btn{
+    padding: 0.8rem 5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .space-between{
+    width: 400px;
+    align-items: center;    
+  }
+
+  header{
+    clip-path: polygon(0 0, 100% 0,100% 100%,71% 97%,0 100%);
+  }
+  .about .left img{
+    padding-bottom: 1rem;
+  }
+
+  .about .right{
+    text-align: center;
+  }
+
+  .about .right .social{
+    justify-content: center;
+  }
+  .skills{
+    clip-path: polygon(0 0, 71% 2%,100% 0,100% 100%,0 100%); 
+  }
+
+  .skills .container .left{
+    margin-bottom: 0px;
+  }
+
+  .skills .container .right{
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .skills .container .right .bars{
+    justify-content: center;
+  }
+
+  .skills .container .right img{
+    margin-left: 1.4rem;
+  }
+  .progress{
+    margin-left: 3.5rem;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 3rem 0;   
+  }
+
+  .slider .slide img{
+    height: 200px;
+    width: 300px;
+  }
+
+  .contact .container .left{
+    margin-top: 0;
+  }
+
+  .contact .container .left img{
+    padding-top: 0px;
+  }
+
+  .contact .input-wrap{
+    grid-template-columns: 1fr;
+    margin-top: 33px;
+    grid-gap: 0;
+  }
+
+  .contact .input-wrap input{
+    margin-top: 1rem;
+  }
+
+  .times{
+    right: 40px;    
+  }
+
+  .times img{
+    width: 18px;
+  }
+
+  .site-main-wrapper .hamburger{
+    top:20px;
+    right: 30px;
+  }
 }
