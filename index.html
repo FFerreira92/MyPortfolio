@@ -235,14 +235,14 @@
                 <img src="img/videoconference.png" alt="">
             </div>
             <div class="right flex-1">
-                <form onsubmit="sendEmail(); reset(); return false;">
+                <form action="https://formsubmit.co/f92ferreira@gmail.com" method="POST">
                     <div class="input-wrap">
-                        <input type="text" id="name" placeholder="Your Name">
-                        <input type="email" id="email" placeholder="Your E-Mail">
+                        <input type="text" name="senderName" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your E-Mail Address">
                     </div>
                     <div class="input-wrap-2">
-                        <input type="text" id="subject" placeholder="subject">
-                        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type="text" name="_subject" placeholder="Subject">
+                        <textarea name="name" cols="30" rows="10" placeholder="Your Message"></textarea>
                     </div>
                     <div class="btn-wrapper">
                         <button type="submit" class="btn btn-primary">Send</button>
@@ -274,22 +274,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "f92ferreira@gmail.com",
-                Password: "79705B25B70A2553ED3BA3DCF16B96BFAB1B",
-                To: 'F92ferreira@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: document.getElementById("subject").value,
-                Body: document.getElementById("message").value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
+    
 </body>
 
 </html>
